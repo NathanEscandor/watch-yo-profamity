@@ -1,0 +1,25 @@
+{
+  "name": "watch-yo-profamity",
+  "version": "1.0.0",
+  "description": "Program that pulls lyrics from Genius and reports if the song contains profanity.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NathanEscandor/watch-yo-profamity.git"
+  },
+  "keywords": [
+    "lyrics",
+    "profanity",
+    "dj",
+    "clean"
+  ],
+  "author": "Nathan Escandor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NathanEscandor/watch-yo-profamity/issues"
+  },
+  "homepage": "https://github.com/NathanEscandor/watch-yo-profamity#readme"
+}
