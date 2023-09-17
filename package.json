@@ -1,5 +1,8 @@
 {
   "name": "watch-yo-profamity",
+  "bin": {
+    "lyrics": "./index.js"
+  },
   "version": "1.0.0",
   "description": "Program that pulls lyrics from Genius and reports if the song contains profanity.",
   "main": "index.js",
