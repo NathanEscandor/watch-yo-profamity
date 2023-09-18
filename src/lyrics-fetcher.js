@@ -8,10 +8,10 @@ const options = {
 	optimizeQuery: true
 };
 
-export function geniusApiSample() {
-    getLyrics(options).then((lyrics) => console.log(lyrics));
+export async function geniusApiSample() {
+    await getLyrics(options).then((lyrics) => console.log(lyrics));
 
-    getSong(options).then((song) =>
+    await getSong(options).then((song) =>
         console.log(`
         ${song.id}
         ${song.title}
