@@ -1,14 +1,16 @@
-import { getLyrics, getSong } from 'genius-lyrics-api';
+import { getLyrics, getSong, searchSong } from 'genius-lyrics-api';
 import { GENIUS_API_KEY } from '../keys/genius.js';
 
-const options = {
-	apiKey: GENIUS_API_KEY,
-	title: 'Blinding Lights',
-	artist: 'The Weeknd',
-	optimizeQuery: true
-};
+
 
 export async function geniusApiSample() {
+    const options = {
+        apiKey: GENIUS_API_KEY,
+        title: 'Blinding Lights',
+        artist: 'The Weeknd',
+        optimizeQuery: true
+    };
+
     await getLyrics(options).then((lyrics) => console.log(lyrics));
 
     await getSong(options).then((song) =>
@@ -19,4 +21,22 @@ export async function geniusApiSample() {
         ${song.albumArt}
         ${song.lyrics}`)
     );
+}
+
+export async function songSearch({title, artist}) {
+    const options = {
+        apiKey: GENIUS_API_KEY,
+        title,
+        artist,
+        optimizeQuery: true
+    };
+    console.log(options)
+    await searchSong(options).then((song) => {
+        console.log(`
+        ${song.id}
+        ${song.title}
+        ${song.url}
+        ${song.albumArt}
+        ${song.lyrics}`)
+    });
 }
