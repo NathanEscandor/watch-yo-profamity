@@ -28,20 +28,24 @@ async function getSongById() {
 
 }
 
-async function searchSong({title, artist}) {
+export async function searchSong({title, artist}) {
     //this might be its own module. cli interface to do the song select back and forth
-    return geniusLyricsAPI.searchSong({
+    const returnObject =  await geniusLyricsAPI.searchSong({
         ...options,
         title,
         artist
     });
+
+    console.log(returnObject)
+
+    return returnObject
 }
 
-export const lyricsFetcher = {
-    getAlbumArt,
-    getLyrics,
-    getLyricsByUrl,
-    getSong,
-    getSongById,
-    searchSong,
-};
+// export const LyricsFetcher = {
+//     getAlbumArt,
+//     getLyrics,
+//     getLyricsByUrl,
+//     getSong,
+//     getSongById,
+//     searchSong,
+// };
