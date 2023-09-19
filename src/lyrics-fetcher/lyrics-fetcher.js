@@ -8,27 +8,27 @@ const options = {
     optimizeQuery: '',
 }
 
-function getAlbumArt(title, artist) {
+async function getAlbumArt(title, artist) {
     
 }
 
-function getLyrics(title, artist) {
+async function getLyrics(title, artist) {
 
 }
 
-function getLyricsByUrl(geniusUrl) {
+async function getLyricsByUrl(geniusUrl) {
 
 }
 
-function getSong() {
+async function getSong() {
 
 }
 
-function getSongById() {
+async function getSongById() {
 
 }
 
-function searchSong({title, artist}) {
+async function searchSong({title, artist}) {
     //this might be its own module. cli interface to do the song select back and forth
     return geniusLyricsAPI.searchSong({
         ...options,
