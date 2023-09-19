@@ -1,0 +1,6 @@
+- make a search interface
+- look up how to modify object constructors
+- look up how to organize modules for imports
+- add tests
+- typescriptify??
+- look into db... leaning towards mongo
