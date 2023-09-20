@@ -4,3 +4,5 @@
 - add tests
 - typescriptify??
 - look into db... leaning towards mongo
+
+- look into adding docker to package mongodb with it??
