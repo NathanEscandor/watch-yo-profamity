@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { searchSong } from "./src/LyricsFetcher/lyrics-fetcher.js";
+import { searchSong } from "./src/lyrics-fetcher/lyrics-fetcher.js";
 // import { geniusApiSample, songSearch } from './src/lyrics-fetcher.js';
 
 // //TODO: if keys/genius.js does not exist, fail
