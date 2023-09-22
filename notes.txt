@@ -4,5 +4,26 @@
 - add tests
 - typescriptify??
 - look into db... leaning towards mongo
-
+- could eventually extend the genius-lyrics-api library with my own functions (could be worth a re-write in my own words?)
 - look into adding docker to package mongodb with it??
+
+----
+
+I pretty much have 2 pathways for lyrics-fetcher. Either I'm given a genius url, or title and artist.
+
+Genius URL:
+- In this case I know exactly what I'm looking for. Try it to see if it errors.
+
+Title and Artist:
+- If more than one result, get the user to give feedback on the desired result to use.
+- Would it work if it were a y/n or press up/down type of ui?
+
+----
+
+I think I might have to only accept URLs for lookups.
+- Maybe just keep them separate? ie provide a list of URLs or provide a csv list of title/artist
+
+----
+
+use mongod to start db
+open new tab, use mongo to open repl

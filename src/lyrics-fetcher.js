@@ -1,4 +1,4 @@
-import { getLyrics, getSong, searchSong } from 'genius-lyrics-api';
+import { getLyrics, getSong, searchSong } from './lyrics-fetcher/genius-lyrics-api.js';
 import { GENIUS_API_KEY } from '../keys/genius.js';
 
 
