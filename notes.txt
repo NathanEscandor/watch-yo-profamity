@@ -27,3 +27,13 @@ I think I might have to only accept URLs for lookups.
 
 use mongod to start db
 open new tab, use mongo to open repl
+
+----
+
+Mon July 22, 2024
+Bring it back to basics. Just build a script that takes in a text file and a list of words and outputs whether or not the words appear.
+
+If we want to get fancy, could make command line options to:
+    - output with color
+    - output more or less verbose
+    - be more or less strict with words
